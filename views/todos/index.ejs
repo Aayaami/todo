@@ -1,0 +1,10 @@
+<h2>Search Todos</h2>
+<form action="/todos" method="GET">
+    <label>Text</label>
+    <input type="text" name="text" value="<%= searchOptions.text %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% todos.forEach(todo => { %>
+    <div><%= todo.text %></div>
+<% }) %>
